@@ -10,6 +10,9 @@ gem 'endpoint_base', github: 'spree/endpoint_base'
 gem 'netsuite', github: 'huoxito/netsuite', branch: 'fix-customer-field-refs'
 gem 'honeybadger'
 
+gem 'forward'
+gem 'foreman'
+
 group :development do
   gem "rake"
   gem "pry"
@@ -23,6 +26,5 @@ group :test do
 end
 
 group :production do
-  gem 'foreman'
   gem 'unicorn'
 end
